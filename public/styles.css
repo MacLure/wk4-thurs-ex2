@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    background-color: #222;
+    text-align: center;
+    color: white;
+}
+
+.nav > li > a {
+    color: white;
+    font-weight: 800;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #bbb;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    margin: 1px;
+    padding: 10px;
+}
+
+.contacts_count {
+    margin: 10px auto;
+    padding: 15px;
+    max-width: 90vw;
+    background-color: salmon;
+}
+
+.count_number {
+    border-bottom: 3px solid mediumturquoise;
+}
+
+.contact {
+    background-color: mediumturquoise;
+    max-width: 90vw;
+    margin: 10px auto;
+    padding: 15px;
+    list-style-type: none;
+}
+
+footer {
+    background-color: #222;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
