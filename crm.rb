@@ -11,10 +11,13 @@ get '/index' do
 end
 
 get '/contacts/:id' do
-  # params[:id] contains the id from the URL
+  # @title = @contact.first_name + "'s Info"
   @contact = Contact.find_by({id: params[:id].to_i})
-  @title = @contact.first_name + "'s Info"
-
+  if @contact
+    erb :show_contact
+  else
+    raise Sinatra::NotFound
+  end
   erb :show_contact
 end
 
